@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 set -eo pipefail
 
@@ -24,5 +23,4 @@ client_encryption_options:
    cipher_suites: [TLS_RSA_WITH_AES_256_CBC_SHA]
 EOF
 
-[ -e file ] && rm cassandra-tel.yaml
 cat cassandra.yaml cassandra-auth.yaml > cassandra-config.yaml
