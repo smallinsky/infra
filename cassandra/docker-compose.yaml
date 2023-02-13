@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  cassandra:
+    container_name: cassandra
+    image: cassandra:latest
+    environment:
+    - POSTGRES_PASSWORD=password
+    - PGDATA=/var/lib/postgres/data
+    volumes:
+    - ./certs:/certs
+    - ./cassandra-config.yaml:/etc/cassandra/cassandra.yaml
+    ports:
+    - "9042:9042"
