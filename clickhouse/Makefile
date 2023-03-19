@@ -14,9 +14,6 @@ certs:
 	mkdir -p $@
 	tctl auth sign --format=db --host=localhost --out=certs/server --ttl=2190h 
 
-.PHONY: run
-all: run
-
 .PHONY: clean
 clean:
 	rm -rf certs

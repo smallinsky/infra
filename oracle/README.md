@@ -5,7 +5,7 @@
 2) `docker login container-registry.oracle.com`
 3) `docker pull container-registry.oracle.com/database/express:21.3.0-xe`
 4) `make certs`
-5) `make oracle`
+5) `make up`
 6) The TCPS listener setup takes a while ~2 min.
 7) For local CLI client install: 
     ```bash
