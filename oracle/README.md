@@ -38,6 +38,8 @@
     SQL>
 
     ```
+  If you are seeing `ORA-12514: TNS:listener does not currently know of service requested in connect
+descriptor` the TCPS XE listener is not ready and you need to retyr after a while.
 10) Connect from GUI client:
     ```bash
     $ tsh proxy db oracle --tunnel

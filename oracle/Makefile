@@ -21,3 +21,15 @@ certs:
 .PHONY: clean
 clean:
 	rm -rf certs
+
+
+.PHONY: build
+build: certs
+	docker build -t teleport-oracle-test .
+
+.PHONY: up-custom
+up-custom:
+	docker run -it --rm -p 1521:1521 -p 2484:2484 \
+        -e ENABLE_TCPS=false -e ORACLE_PWD=pass \
+        --entrypoint=/opt/oracle/entrypoint.sh \
+     teleport-oracle-test
