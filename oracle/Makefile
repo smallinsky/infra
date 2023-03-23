@@ -5,7 +5,7 @@ up: | certs
 		-e ENABLE_TCPS=false -e ORACLE_PWD=pass \
 		-v ${PWD}/certs:/certs \
 		-v ${PWD}/scripts:/opt/oracle/scripts/startup  \
-		-v ${PWD}/setupTcpsCustom.sh:/opt/oracle/setupTcpsCustom.sh
+		-v ${PWD}/setupTcpsCustom.sh:/opt/oracle/setupTcpsCustom.sh \
 		-v ${PWD}/entrypoint.sh:/opt/oracle/entrypoint.sh \
 		container-registry.oracle.com/database/express:21.3.0-xe
 

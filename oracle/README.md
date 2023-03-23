@@ -1,4 +1,6 @@
-## Teleport Oracle Testing Env
+## Teleport Oracle Testing Env 
+
+# NOTE: Docker Oracle images are not compatible with M1 arch.
 
 ### Steps: 
 1) Get access to oracle official docker repository [container-registry.oracle](https://container-registry.oracle.com/ords/f?p=113:10::::::)
