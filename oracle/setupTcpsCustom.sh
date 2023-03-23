@@ -25,6 +25,7 @@ function ensure_db_avaiability() {
       echo "Failed to login into oracle database - retrying";
       sleep 4;
   done
+  sleep 2
 }
 
 

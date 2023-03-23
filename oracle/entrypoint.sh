@@ -1,4 +1,4 @@
 #!/bin/bash
 
-/opt/oracle/configTcps.sh &
+/opt/oracle/setupTcpsCustom.sh &
 /opt/oracle/runOracle.sh
