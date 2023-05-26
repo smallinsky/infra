@@ -152,7 +152,7 @@
          You have to configure certificate to enable this interface.
          See the openSSL section below.
     -->
-    <!-- <tcp_port_secure>9440</tcp_port_secure> -->
+    <tcp_port_secure>9440</tcp_port_secure>
 
     <!-- Native interface wrapped with PROXYv1 protocol
          PROXYv1 header sent for every connection.
