@@ -63,7 +63,7 @@
     ```
 5) Connect to `clickhouse-native` DB using ClickHouse Native Protocol by CLI:
     ```bash
-    $ tsh db connect --db-name=alice clickhouse-native
+    $ tsh db connect --db-user=alice clickhouse-native
     ClickHouse client version 22.7.2.1.
     Connecting to localhost:49329 as user default.
     Connected to ClickHouse server version 23.4.2 revision 54462.
