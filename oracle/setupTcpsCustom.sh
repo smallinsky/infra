@@ -81,5 +81,21 @@ EOF
 
 
 ensure_db_avaiability
-sqlplus system/$ORACLE_PWD @/tmp/create_user.sql
+sqlplus sys/$ORACLE_PWD as sysdba @/tmp/create_user.sql
 
+
+
+cat <<EOF > /tmp/shutdown.sql
+shutdown immediate;
+exit;
+EOF
+
+sqlplus sys/$ORACLE_PWD as sysdba @/tmp/shutdown.sql
+
+cat <<EOF > /tmp/startup.sql
+startup
+exit;
+EOF
+
+
+sqlplus sys/$ORACLE_PWD as sysdba @/tmp/startup.sql

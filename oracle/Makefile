@@ -18,6 +18,16 @@ certs:
 	tctl  auth sign --format=oracle --host=localhost --out=certs/server --ttl=2190h | tee certs/tctl.result
 
 
+.PHONY: connect
+connect:
+	docker exec -it oracle-db /bin/bash -c 'sqlplus  system/$$ORACLE_PWD'
+
+
+.PHONY: sysoper
+sysoper:
+	docker exec -it oracle-db /bin/bash -c 'sqlplus sys/$$ORACLE_PWD as sysoper'
+
+
 .PHONY: clean
 clean:
 	rm -rf certs
