@@ -1,0 +1,9 @@
+id_rsa_azure
+id_rsa_azure.pub
+role.yaml
+join.yaml
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/terraform.tfvars
